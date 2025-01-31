@@ -1,0 +1,128 @@
+.connect-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.connect-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.user-card {
+    background: rgba(45, 45, 45, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    background: rgba(45, 45, 45, 0.8);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.user-info {
+    padding: 1.5rem;
+    background: transparent;
+}
+
+.user-info h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.user-email {
+    color: #00bcd4;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.user-interests {
+    margin-top: 1rem;
+    background: rgba(54, 54, 54, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.user-interests h4 {
+    margin: 0 0 0.5rem 0;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.interest-tag {
+    background: rgba(74, 74, 74, 0.6);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #00bcd4;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.interest-tag:hover {
+    background: rgba(90, 90, 90, 0.7);
+    border-color: #00bcd4;
+}
+
+.contact-button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    background: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #008c9e;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 188, 212, 0.3);
+}
+
+.contact-button:active {
+    transform: translateY(0);
+}
