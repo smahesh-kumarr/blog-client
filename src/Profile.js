@@ -25,7 +25,7 @@ const Profile = () => {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/profile/${userInfo.email}`);
+      const response = await fetch(`https://blog-app-backend-1-rdjj.onrender.com/${userInfo.email}`);
       if (response.ok) {
         const data = await response.json();
         setProfile(data);
